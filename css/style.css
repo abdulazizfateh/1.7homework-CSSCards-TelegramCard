@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/day.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mode-icon {
+    width: 100%;
+    display: flex;
+    padding: 30px 30px 20px 0;
+    justify-content: end;
+
+    .mode-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1.5px solid transparent;
+        transition: 0.5s all;
+
+        &:active {
+            background-color: rgba(255, 255, 255, 0.631);
+            border: 1.5px solid rgba(0, 0, 0, 0.527);
+        }
+    }
+}
+
+.mode-btn-night-img {
+    display: none;
+}
+
+.card {
+    width: 400px;
+    padding: 32px 0;
+    background-color: white;
+    border-radius: 22px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 24px;
+}
+
+.card-img {
+    width: 122px;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.card-username {
+    font-size: 15px;
+    line-height: 18px;
+    color: #7d7f81;
+    text-decoration: none;
+}
+
+.card-bio {
+    line-height: 25px;
+}
+
+.card-btn {
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 170px;
+        height: 42px;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        border-radius: 22px;
+        font-weight: bold;
+        border: none;
+        background-color: #188AD5;
+        cursor: pointer;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.black-mode {
+    background-color: black;
+    background-image: url(../images/night.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.card-bg {
+    background-color: #1E1E1E;
+}
+
+
+.none {
+    display: none;
+}
+
+.have {
+    display: block;
+}
